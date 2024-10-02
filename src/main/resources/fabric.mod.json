@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "rainy-days",
+	"version": "${version}",
+	"name": "Rainy Days",
+	"description": "This mod builds upon and improves the minecraft weather systems.",
+	"authors": [
+		"PlebberX"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/rainy-days/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.plebberx.rainydays.RainyDays"
+		],
+		"client": [
+			"net.plebberx.rainydays.RainyDaysClient"
+		],
+		"fabric-datagen": [
+			"net.plebberx.rainydays.RainyDaysDataGenerator"
+		]
+	},
+	"mixins": [
+		"rainy-days.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
